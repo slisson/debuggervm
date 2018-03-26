@@ -720,7 +720,7 @@
             <ref role="1PxDUh" to="w12c:1K6PbAJA65k" resolve="MemoryType" />
           </node>
           <node concept="Xl_RD" id="1K6PbAJ_Gjr" role="37wK5m">
-            <property role="Xl_RC" value="Console Output Lines" />
+            <property role="Xl_RC" value="Console Buffer" />
           </node>
         </node>
       </node>

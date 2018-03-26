@@ -7,20 +7,8 @@
   <imports />
   <registry>
     <language id="ca9fb56a-6710-454e-833d-5b3876c8f790" name="de.q60.mps.delta.vm.demolang">
-      <concept id="2019535376905598239" name="de.q60.mps.delta.vm.demolang.structure.Event" flags="ng" index="2NN26A" />
       <concept id="2019535376905567634" name="de.q60.mps.delta.vm.demolang.structure.Module" flags="ng" index="2NNa$F">
         <child id="2019535376905581490" name="content" index="2NN6sb" />
-      </concept>
-      <concept id="2019535376905567900" name="de.q60.mps.delta.vm.demolang.structure.Transition" flags="ng" index="2NNaC_">
-        <reference id="2019535376905598339" name="event" index="2NN24U" />
-        <reference id="2019535376905578781" name="target" index="2NN7Q$" />
-      </concept>
-      <concept id="2019535376905567763" name="de.q60.mps.delta.vm.demolang.structure.Statemachine" flags="ng" index="2NNaEE">
-        <child id="2019535376905598281" name="events" index="2NN27K" />
-        <child id="2019535376905567942" name="states" index="2NNaDZ" />
-      </concept>
-      <concept id="2019535376905567858" name="de.q60.mps.delta.vm.demolang.structure.State" flags="ng" index="2NNaFb">
-        <child id="2019535376905567951" name="transitions" index="2NNaDQ" />
       </concept>
       <concept id="2019535376905655526" name="de.q60.mps.delta.vm.demolang.structure.VoidType" flags="ng" index="2NNg1v" />
       <concept id="2019535376905655331" name="de.q60.mps.delta.vm.demolang.structure.Function" flags="ng" index="2NNg2q">
@@ -125,55 +113,6 @@
           </node>
         </node>
         <node concept="2NTVeH" id="1K6PbAJSPbe" role="2NQ97K" />
-      </node>
-    </node>
-    <node concept="2NNaEE" id="1K6PbAJMFHn" role="2NN6sb">
-      <property role="TrG5h" value="BicycleComputer" />
-      <node concept="2NNaFb" id="1K6PbAJMLvc" role="2NNaDZ">
-        <property role="TrG5h" value="Off" />
-        <node concept="2NNaC_" id="1K6PbAJMLv_" role="2NNaDQ">
-          <ref role="2NN24U" node="1K6PbAJMK2q" resolve="ButtonPress" />
-          <ref role="2NN7Q$" node="1K6PbAJMKIk" resolve="DisplaySpeed" />
-        </node>
-      </node>
-      <node concept="2NNaFb" id="1K6PbAJMKIk" role="2NNaDZ">
-        <property role="TrG5h" value="DisplaySpeed" />
-        <node concept="2NNaC_" id="1K6PbAJMLwn" role="2NNaDQ">
-          <ref role="2NN24U" node="1K6PbAJMK2q" resolve="ButtonPress" />
-          <ref role="2NN7Q$" node="1K6PbAJMLuy" resolve="DisplayDistance" />
-        </node>
-        <node concept="2NNaC_" id="1K6PbAJMLww" role="2NNaDQ">
-          <ref role="2NN24U" node="1K6PbAJMLuV" resolve="LongButtonPress" />
-          <ref role="2NN7Q$" node="1K6PbAJMLvc" resolve="Off" />
-        </node>
-      </node>
-      <node concept="2NNaFb" id="1K6PbAJMLuy" role="2NNaDZ">
-        <property role="TrG5h" value="DisplayDistance" />
-        <node concept="2NNaC_" id="1K6PbAJMLx3" role="2NNaDQ">
-          <ref role="2NN24U" node="1K6PbAJMK2q" resolve="ButtonPress" />
-          <ref role="2NN7Q$" node="1K6PbAJMLvI" resolve="DisplayAverageSpeed" />
-        </node>
-        <node concept="2NNaC_" id="1K6PbAJMLwL" role="2NNaDQ">
-          <ref role="2NN7Q$" node="1K6PbAJMLvc" resolve="Off" />
-          <ref role="2NN24U" node="1K6PbAJMLuV" resolve="LongButtonPress" />
-        </node>
-      </node>
-      <node concept="2NNaFb" id="1K6PbAJMLvI" role="2NNaDZ">
-        <property role="TrG5h" value="DisplayAverageSpeed" />
-        <node concept="2NNaC_" id="1K6PbAJMLwU" role="2NNaDQ">
-          <ref role="2NN24U" node="1K6PbAJMK2q" resolve="ButtonPress" />
-          <ref role="2NN7Q$" node="1K6PbAJMKIk" resolve="DisplaySpeed" />
-        </node>
-        <node concept="2NNaC_" id="1K6PbAJMLxk" role="2NNaDQ">
-          <ref role="2NN7Q$" node="1K6PbAJMLvc" resolve="Off" />
-          <ref role="2NN24U" node="1K6PbAJMLuV" resolve="LongButtonPress" />
-        </node>
-      </node>
-      <node concept="2NN26A" id="1K6PbAJMK2q" role="2NN27K">
-        <property role="TrG5h" value="ButtonPress" />
-      </node>
-      <node concept="2NN26A" id="1K6PbAJMLuV" role="2NN27K">
-        <property role="TrG5h" value="LongButtonPress" />
       </node>
     </node>
   </node>
