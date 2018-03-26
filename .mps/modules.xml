@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/de.q60.mps.delta.vm.demolang/de.q60.mps.delta.vm.demolang.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.delta.vm.runtime/de.q60.mps.delta.vm.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.q60.mps.delta.vm.sandbox/de.q60.mps.delta.vm.sandbox.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
