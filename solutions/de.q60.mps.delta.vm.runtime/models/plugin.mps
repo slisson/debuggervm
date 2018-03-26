@@ -11,7 +11,6 @@
     <import index="afvd" ref="r:c3a69cca-2ee2-4f43-ad01-4e542b36a204(de.q60.mps.delta.vm.runtime.debugger.test)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
-    <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -19,7 +18,6 @@
         <child id="1214307129846" name="getComponentBlock" index="2Um5zG" />
       </concept>
       <concept id="1213888653896" name="jetbrains.mps.lang.plugin.structure.InitBlock" flags="in" index="2xpIHi" />
-      <concept id="1213888797251" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_Project" flags="nn" index="2xqhHp" />
       <concept id="1214307303872" name="jetbrains.mps.lang.plugin.structure.GetComponentBlock" flags="in" index="2UmK3q" />
       <concept id="6547237850567458268" name="jetbrains.mps.lang.plugin.structure.BaseToolDeclaration" flags="ng" index="2XNcJY">
         <property id="6547237850567462620" name="caption" index="2XNbzY" />
@@ -33,16 +31,12 @@
       </concept>
       <concept id="481983775135178825" name="jetbrains.mps.lang.plugin.standalone.structure.ProjectPluginInitBlock" flags="in" index="2uRRBT" />
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
-      <concept id="681855071694758165" name="jetbrains.mps.lang.plugin.standalone.structure.GetToolInProjectOperation" flags="nn" index="LR4U6">
-        <reference id="681855071694758166" name="tool" index="LR4U5" />
-      </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
-      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -126,22 +120,6 @@
               <node concept="2BZ7hE" id="1K6PbAJCuAH" role="2OqNvi">
                 <ref role="2WH_rO" node="1K6PbAJCtJp" resolve="component" />
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="1K6PbAJCypf" role="3cqZAp">
-          <node concept="2OqwBi" id="1K6PbAJCy$B" role="3clFbG">
-            <node concept="2WthIp" id="1K6PbAJCypd" role="2Oq$k0" />
-            <node concept="liA8E" id="1K6PbAJCyTQ" role="2OqNvi">
-              <ref role="37wK5l" to="71xd:~BaseTool.makeAvailable():void" resolve="makeAvailable" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="1K6PbAJE8oN" role="3cqZAp">
-          <node concept="2OqwBi" id="1K6PbAJE8Gw" role="3clFbG">
-            <node concept="2xqhHp" id="1K6PbAJE8oL" role="2Oq$k0" />
-            <node concept="LR4U6" id="1K6PbAJE9lm" role="2OqNvi">
-              <ref role="LR4U5" node="1K6PbAJCsR6" resolve="Debugger" />
             </node>
           </node>
         </node>

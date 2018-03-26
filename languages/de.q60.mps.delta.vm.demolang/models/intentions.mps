@@ -129,19 +129,6 @@
     <node concept="2Sbjvc" id="1K6PbAJN1va" role="2ZfgGD">
       <node concept="3clFbS" id="1K6PbAJN1vb" role="2VODD2">
         <node concept="3clFbH" id="1K6PbAJB8xS" role="3cqZAp" />
-        <node concept="3cpWs8" id="1K6PbAJNhgY" role="3cqZAp">
-          <node concept="3cpWsn" id="1K6PbAJNhgZ" role="3cpWs9">
-            <property role="TrG5h" value="session" />
-            <node concept="3uibUv" id="1K6PbAJNhgR" role="1tU5fm">
-              <ref role="3uigEE" to="e807:1K6PbAJMVEf" resolve="DebugSession" />
-            </node>
-            <node concept="2ShNRf" id="1K6PbAJNhh0" role="33vP2m">
-              <node concept="1pGfFk" id="1K6PbAJNhh1" role="2ShVmc">
-                <ref role="37wK5l" to="e807:1K6PbAJWIJb" resolve="DebugSession" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="1K6PbAJB8rE" role="3cqZAp">
           <node concept="3cpWsn" id="1K6PbAJB8rF" role="3cpWs9">
             <property role="TrG5h" value="instruction" />
@@ -155,11 +142,21 @@
                 <node concept="2ShNRf" id="1K6PbAJUwld" role="37wK5m">
                   <node concept="1pGfFk" id="1K6PbAJX49e" role="2ShVmc">
                     <ref role="37wK5l" to="tir:1K6PbAJWVCU" resolve="ProgramBuilder" />
-                    <node concept="37vLTw" id="1K6PbAJX4gr" role="37wK5m">
-                      <ref role="3cqZAo" node="1K6PbAJNhgZ" resolve="session" />
-                    </node>
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1K6PbAJNhgY" role="3cqZAp">
+          <node concept="3cpWsn" id="1K6PbAJNhgZ" role="3cpWs9">
+            <property role="TrG5h" value="session" />
+            <node concept="3uibUv" id="1K6PbAJNhgR" role="1tU5fm">
+              <ref role="3uigEE" to="e807:1K6PbAJMVEf" resolve="DebugSession" />
+            </node>
+            <node concept="2ShNRf" id="1K6PbAJNhh0" role="33vP2m">
+              <node concept="1pGfFk" id="1K6PbAJNhh1" role="2ShVmc">
+                <ref role="37wK5l" to="e807:1K6PbAJWIJb" resolve="DebugSession" />
               </node>
             </node>
           </node>
